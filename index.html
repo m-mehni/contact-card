@@ -6,8 +6,8 @@
 
 <style>
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #eef2f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,64 +16,95 @@ body {
 }
 
 .card {
-  background: white;
-  padding: 40px 30px;
+  background: #ffffff;
+  padding: 36px 32px;
   max-width: 420px;
   width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   text-align: center;
-  position: relative;
 }
 
+/* Logo */
 .logo {
-  max-width: 200px;
-  margin-bottom: 20px;
+  max-width: 180px;
+  margin-bottom: 24px;
 }
 
+/* Optional Profile Picture */
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid #0077cc;
+  margin-bottom: 18px;
+  border: 2px solid #d0d7de;
 }
 
+/* Typography */
 h1 {
-  margin: 5px 0;
-  font-size: 24px;
-  color: #333;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2933;
 }
 
-p {
-  color: #555;
-  margin: 6px 0;
+.role {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.organization {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 20px 0;
+}
+
+/* Contact */
+.contact a {
+  color: #1d4ed8;
+  text-decoration: none;
   font-size: 14px;
 }
 
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
 .button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #0077cc;
-  color: white;
+  margin-top: 22px;
+  padding: 11px 22px;
+  background: #1d4ed8;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: background 0.3s;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
 }
 
 .button:hover {
-  background: #005fa3;
+  background: #1e40af;
 }
 
+/* Secondary Link */
 .link {
   display: block;
-  margin-top: 15px;
-  color: #0077cc;
+  margin-top: 16px;
+  color: #1d4ed8;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .link:hover {
@@ -93,17 +124,19 @@ p {
   <!-- <img class="profile-pic" src="profile.jpg" alt="Michael Mehni"> -->
 
   <h1>Michael Mehni</h1>
-  <p>Asset Management Engineering Assistant</p>
-  <p>The City of Prince George</p>
+  <div class="role">Asset Management Engineering Assistant</div>
+  <div class="organization">City of Prince George</div>
 
-  <p>
+  <div class="divider"></div>
+
+  <div class="contact">
     <a href="mailto:michael.mehni@princegeorge.ca">
       michael.mehni@princegeorge.ca
     </a>
-  </p>
+  </div>
 
   <a class="button" href="contact.vcf" download>
-    Save Contact
+    Download Contact
   </a>
 
   <a class="link" href="https://www.linkedin.com/in/mmehni/" target="_blank">
