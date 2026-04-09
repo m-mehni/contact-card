@@ -5,51 +5,79 @@
 <title>Michael Mehni</title>
 
 <style>
-body{
-font-family: Arial, sans-serif;
-background:#f5f7fa;
-text-align:center;
-padding:40px;
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.card{
-background:white;
-padding:30px;
-max-width:420px;
-margin:auto;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
+.card {
+  background: white;
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
 }
 
-h1{
-margin-bottom:5px;
+.logo {
+  max-width: 120px;
+  margin-bottom: 20px;
 }
 
-p{
-color:#555;
-margin:6px 0;
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #0077cc;
 }
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:12px 22px;
-background:#0077cc;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:16px;
+h1 {
+  margin: 5px 0;
+  font-size: 24px;
+  color: #333;
 }
 
-.button:hover{
-background:#005fa3;
+p {
+  color: #555;
+  margin: 6px 0;
+  font-size: 14px;
 }
 
-.link{
-display:block;
-margin-top:15px;
-color:#0077cc;
-text-decoration:none;
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #005fa3;
+}
+
+.link {
+  display: block;
+  margin-top: 15px;
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
@@ -58,23 +86,29 @@ text-decoration:none;
 
 <div class="card">
 
-<h1>Michael Mehni</h1>
-<p>Asset Management Engineering Assistant</p>
-<p>The City of Prince George</p>
+  <!-- City Logo -->
+  <img class="logo" src="city-logo.png" alt="City of Prince George Logo">
 
-<p>
-<a href="mailto:michael.mehni@princegeorge.ca">
-michael.mehni@princegeorge.ca
-</a>
-</p>
+  <!-- Optional Profile Picture -->
+  <!-- <img class="profile-pic" src="profile.jpg" alt="Michael Mehni"> -->
 
-<a class="button" href="contact.vcf" download>
-Save Contact
-</a>
+  <h1>Michael Mehni</h1>
+  <p>Asset Management Engineering Assistant</p>
+  <p>The City of Prince George</p>
 
-<a class="link" href="https://www.linkedin.com/in/mmehni/" target="_blank">
-LinkedIn Profile
-</a>
+  <p>
+    <a href="mailto:michael.mehni@princegeorge.ca">
+      michael.mehni@princegeorge.ca
+    </a>
+  </p>
+
+  <a class="button" href="contact.vcf" download>
+    Save Contact
+  </a>
+
+  <a class="link" href="https://www.linkedin.com/in/mmehni/" target="_blank">
+    LinkedIn Profile
+  </a>
 
 </div>
 
